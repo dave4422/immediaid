@@ -1,0 +1,56 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "title": "Diagnosis",
+  "description": "Data to find correct diagnosis",
+  "type": "object",
+  
+  
+  "properties": {
+    "id": {
+      "type": "number",
+      "description": "Product identifier"
+    },
+    "key": {
+      "type": "string",
+      "description": "To identify further"
+    },
+    "sex": {
+    
+  "type": "string",
+  "enum": ["male", "female", "other"]
+
+
+    },
+    
+        "age": {
+      "type": "string",
+      "format": "date"
+    },
+    
+        "location": {
+    
+  "type": "string",
+  "enum": ["none","all","mouth","eyes","resthead","neck", "armleft", "armright", "legleft","legright","footleft","footright","abdominal"]
+
+
+    },
+    
+    
+    "matches": {
+    "type": "object",
+      "properties": {
+        "warehouse": {
+          "type": "number"
+        },
+        "retail": {
+          "type": "number"
+        }
+    
+    
+    }
+
+  }
+}
+}
+
+

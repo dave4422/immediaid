@@ -1,0 +1,39 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "title": "DiagnosisResults",
+  "description": "correct diagnosis or further questions",
+  "type": "object",
+    "properties": {
+  
+      "id": {
+      "type": "number",
+      "description": "Product identifier"
+    },
+  
+  
+      "error_code": {
+      "type": "number",
+      "description": "0 ok 1 ambigiutiy 2 no match"
+    },
+
+    "result": {
+      "type": "string",
+      "description": "result of diagnosis, empty if not unambiguous"
+    },
+    
+    "questions": {
+    
+  "type": "array",
+  "items": 
+    {
+      "type": "string",
+      "enum": ["Street", "Avenue", "Boulevard"]
+    }
+  
+
+
+
+  }
+}
+
+}

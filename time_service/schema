@@ -1,0 +1,54 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "title": "TriageResult",
+  "description": "A product from Acme's catalog",
+  "type": "object",
+  "required": ["id", "name", "price"],
+  
+  
+  "properties": {
+    "id": {
+      "type": "number",
+      "description": "Product identifier"
+    },
+    "key": {
+      "type": "string",
+      "description": "Name of the product"
+    },
+    "price": {
+      "type": "number",
+      "minimum": 0
+    },
+    "sex": {
+    
+  "type": "string",
+  "enum": ["male", "female", "other"]
+
+
+    },
+    
+        "age": {
+      "type": "string",
+      "format": "date"
+    },
+    
+    
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "stock": {
+      "type": "object",
+      "properties": {
+        "warehouse": {
+          "type": "number"
+        },
+        "retail": {
+          "type": "number"
+        }
+      }
+    }
+  }
+}

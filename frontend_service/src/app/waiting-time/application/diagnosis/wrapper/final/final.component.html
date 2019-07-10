@@ -1,0 +1,26 @@
+<h3 style="margin-top: 0px;"> Triage: Teil 1</h3>
+<p>Bitte beantworten Sie folgende Triagefragen zu ihrer Diagnose {{diagnosis}}:</p>
+
+	<div *ngFor="let hero of questions_extre_red; index as i;">
+
+
+
+
+	
+
+
+
+
+			<div class="question">{{ hero }}</div>
+			<mat-slide-toggle (change)="onChange(i)">
+			</mat-slide-toggle>
+			<mat-divider></mat-divider>
+
+
+
+
+	
+	</div>
+
+
+	

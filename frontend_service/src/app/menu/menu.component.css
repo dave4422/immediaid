@@ -1,0 +1,95 @@
+/* AppComponent's private CSS styles */
+
+a {
+text-decoration: none;
+color: #000;
+
+}
+
+
+
+
+
+.logos_menu{
+margin-bottom: 10px;
+max-width: 260px;
+display: block;
+text-align: left;
+
+
+}
+
+
+
+
+#logo_clinic img{
+max-width: 260px;
+max-height: 55px;
+margin-bottom: 30px;
+
+}
+
+
+
+#logo_tum img{
+
+max-height: 65px;
+
+max-width: 260px;
+margin-bottom: 30px;
+
+}
+
+#logo_imp img{
+margin-bottom: 20px;
+margin-left: -7px;
+max-height: 65px;
+
+max-width: 260px;
+
+}
+
+
+.menu_item_wrapper{
+
+padding: 0;
+
+
+}
+
+
+ul{
+
+list-style: none;
+ list-style-position: inside;
+
+ padding-left: 0px;
+
+}
+
+.menu_item_wrapper li{
+padding: 2px 12px;
+background-color: #f4f4f4;
+
+
+list-style-type: none;
+
+margin-bottom: 8px;
+  border: none;
+  font-size: 14px;
+
+
+
+}
+
+.menu_item_wrapper button{
+	padding: 0 0 0 0;
+}
+
+.menu_item_wrapper li:hover{
+background-color: #97c1ed3d;
+
+
+
+}
+

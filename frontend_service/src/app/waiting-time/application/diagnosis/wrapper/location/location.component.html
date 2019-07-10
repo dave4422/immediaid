@@ -1,0 +1,33 @@
+<h3 style="margin-top: 0px;">Diagnose: Lokalisierung des medizinischen Notfalls</h3>
+<p style="margin-bottom: 5px;">Bitte klicken Sie an, <b>wo</b> {{patient()}} Beschwerden hat. Wenn die Beschwerden an mehr an einem Ort sind, nehmen Sie den Ort mit den stärksten Schmerzen:</p>
+
+<div class="left">
+	<p style="margin-top: 5px;">Aktuell gewählt: {{getAsString()}}</p>
+<div class = "question">Beschwerden sind nicht lokalisierbar</div>
+<mat-slide-toggle
+    (change)="onChangeNL($event)"
+	
+	[checked] = "location" >
+</mat-slide-toggle>
+
+<mat-divider></mat-divider>
+
+<div class = "question">Beschwerden sind psychisch</div>
+<mat-slide-toggle
+    (change)="onChangePSY($event)"
+	
+	[checked] = "checkedPSY()" >
+</mat-slide-toggle>
+
+<mat-divider></mat-divider>
+
+<div class = "question">Beschwerden sind am ganzen Körper</div>
+<mat-slide-toggle
+    (change)="onChangeALL($event)"
+	
+	[checked] = "location" >
+</mat-slide-toggle>
+
+</div>
+
+<mat-card id="body_card"><mat-card-content><div class="body"><div #body ><img [src]="img" (click)="onEvent($event)" #abc></div></div></mat-card-content></mat-card>

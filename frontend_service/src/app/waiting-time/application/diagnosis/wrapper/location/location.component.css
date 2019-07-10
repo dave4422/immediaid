@@ -1,0 +1,65 @@
+
+
+
+
+
+
+
+#body_card img{
+	text-align: center;
+	margin: 0 auto;
+	max-width:45%;
+}
+
+@media screen and (max-width: 900px) {
+#body_card{
+	margin-top: 20px;
+	margin-bottom: 30px;
+	max-width:90%;
+	display:block;	
+	text-align: center;
+
+}
+
+.question{
+	width:90%;
+	margin-right: 10%;
+		margin-bottom: 20px;
+	margin-top: 20px;	
+	
+	display:inline-block;
+}
+.left{
+	display:inline-block;
+	width: 60%;
+}
+
+
+}
+
+@media screen and (min-width: 900px) {
+	#body_card{
+	max-width:50%;
+	display:inline-block;	
+	text-align: center;
+
+
+}
+
+.question{
+	width:35%;
+	margin-right: 10%;
+		margin-bottom: 20px;
+	margin-top: 20px;	
+	
+	display:inline-block;
+}
+
+.left{
+	display:inline-block;
+	width: 35%;
+	margin-right:9.5%;
+}
+
+
+}

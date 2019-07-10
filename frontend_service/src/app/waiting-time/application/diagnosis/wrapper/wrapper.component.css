@@ -1,0 +1,22 @@
+.buttons{
+
+	
+display:block;
+
+}
+
+.content{
+	min-height:400px;
+}
+
+
+#left{
+
+  float: left;
+}
+
+#right {
+float: right;
+	
+}
+

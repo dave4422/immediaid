@@ -1,0 +1,33 @@
+<h3 style="margin-top: 0px;"> Diagnose: Allgemeine Informationen</h3>
+<p>Bitte füllen Sie folgende allgemeine Angaben zum Patienten/ zur Patientin aus:</p>
+
+<div class = "question">Handelt es sich bei der/die Patient(in) um ein Baby?</div>
+<mat-slide-toggle
+    (change)="onChange($event)"
+	[(ngModel)]="data.child"
+	[checked] = "data.child" >
+</mat-slide-toggle>
+
+<mat-divider></mat-divider>
+
+<div class = "question">Bitte geben Sie das Geburtsdatum des Patienten/ der Patientin an</div>
+<mat-form-field>
+  <input matInput [matDatepicker]="picker1" placeholder="Geburtsdatum Patient(in)" [formControl]="date">
+  <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+  <mat-datepicker #picker1 [startAt]="data.age"></mat-datepicker>
+</mat-form-field>
+
+
+<mat-divider></mat-divider>
+<div class = "question">Bitte geben Sie das Geschlecht des Patienten/ der Patientin an</div>
+<mat-form-field>
+  <mat-label>Geschlecht des Patienten/ der Patientin</mat-label>
+  <mat-select [(value)]="data.sex" >
+    <mat-option value="Sex.Female">Weiblich</mat-option>
+    <mat-option value="Sex.Male">Männlich</mat-option>
+    <mat-option value="Sex.Other">Divers</mat-option>
+  </mat-select>
+</mat-form-field>
+
+
+

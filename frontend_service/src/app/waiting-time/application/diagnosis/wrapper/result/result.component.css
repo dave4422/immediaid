@@ -1,0 +1,14 @@
+.alternatives mat-card{
+	margin-bottom: 20px;
+}
+
+.alternatives img{
+	display:inline-block;
+	width:30%;
+	margin-right: 5%;
+}
+
+.alternatives p{
+	display:inline-block;
+	width:50%;
+}

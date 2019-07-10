@@ -1,0 +1,23 @@
+<app-disclaimer *ngIf="!acceptDisclaimer" (voted)="onVoted($event)"></app-disclaimer>
+
+<div class="welcome" *ngIf="acceptDisclaimer">
+	<h2 class="logo_head">Wartezeit Assistent</h2>
+<h3 class="sublogo_head">Universitätsklinikum rechts der Isar</h3>
+
+<h3>Willkommen beim Wartezeit Assistenten!</h3>
+	<p>Notfälle lassen sich nicht planen. In der Notaufnahme müssen zum Teil schwere Krankheitsbilder rasch diagnostiziert
+	und behandelt werden. Deshalb finden Reihenfolge und Ablauf von Diagnostik und Therapie nach der medizinischen
+	Dringlichkeit statt. Neben der Dringlichkeit Ihrer Verletzung, hängt Ihre Wartezeit von der Auslastung der
+	Notaufnahme ab.</p>
+
+	<p>Wir berechnen Ihre Wartezeit für Sie und schlagen Ihnen passende, zeitsparende Alternativen zur Notaufnahme vor! </p>
+
+	<p>Bitte beantworten Sie hierzu gewissenhaft folgende Fragen</p>
+
+	<button routerLink="/application/diagnosis/general" style="display: block;
+margin-right: auto;
+
+margin-left: auto;
+
+margin-top: 30px;" mat-flat-button>Weiter</button>
+</div>

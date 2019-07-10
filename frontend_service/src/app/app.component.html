@@ -1,0 +1,78 @@
+<div class="cookie" *ngIf="!accept_cookie">
+	<app-cookie-notice 
+      (voted)="onVoted($event)"></app-cookie-notice>
+	
+</div>
+
+
+<div class="header">
+	<div class="menu">
+		<button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Icon-button with menu">
+			<mat-icon>menu</mat-icon>
+		</button>
+
+
+		<mat-menu #menu="matMenu">
+			<button mat-menu-item routerLink="/start">
+				<mat-icon>home</mat-icon>
+				<span>Start</span>
+			</button>
+			<button mat-menu-item routerLink="/info/facts-er">
+				<mat-icon>local_hospital</mat-icon>
+				<span> Fakten zur Notaufnahme</span>
+			</button>
+			<button mat-menu-item routerLink="/info/algorithm">
+				<mat-icon>settings</mat-icon>
+				<span>Wie funktioniert der Algorithmus?</span>
+			</button>
+			<button mat-menu-item routerLink="/info/faq">
+				<mat-icon>question_answer</mat-icon>
+				<span>FAQ</span>
+			</button>
+			<button mat-menu-item routerLink="/info/impressum">
+				<mat-icon>verified_user</mat-icon>
+				<span>Impressum & Datenschutz</span>
+			</button>
+		</mat-menu>
+	</div>
+	<div class="logo_container"><img src="/assets/img/immediaid.png" alt="Immediaid Logo"></div>
+	<div class="header_grey"></div>
+</div>
+
+<div class="wrapper">
+
+	<div class="content_wrapper">
+
+
+
+
+
+		<!--- <div class="bg_color_main"> -->
+		<main class="main_content">
+			<div class="another_class">
+
+
+
+				<div class="inner_info">
+
+					<router-outlet></router-outlet>
+
+				</div>
+			</div>
+		</main>
+
+
+
+		<!-- </div>-->
+		<div class="sidebar">
+
+			<app-menu></app-menu>
+		</div>
+	</div>
+
+
+
+	<div class="footer">
+		<app-footer></app-footer>
+	</div>
+</div>

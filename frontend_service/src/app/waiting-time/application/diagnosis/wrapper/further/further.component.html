@@ -1,0 +1,51 @@
+<h3 style="margin-top: 0px;"> Diagnose: Weitere Angaben</h3>
+
+
+
+<mat-card *ngIf="enough">
+
+	<mat-card-title>
+
+		Bitte machen Sie folgende weitere Angaben:
+	</mat-card-title>
+
+
+	<mat-card-content>
+
+		<div>
+			<h4>Es sind keine weiteren Angaben mehr nötig!</h4>
+			<h4>Die Diagnoses lautet: <b>{{diagnosis}}</b></h4>
+
+
+		</div>
+
+	</mat-card-content>
+</mat-card>
+
+<div *ngIf="!enough">
+
+	<mat-card *ngFor="let hero of fragen; index as i;">
+
+
+		<mat-card-title>
+			Bitte machen Sie folgende weitere Angaben:
+		</mat-card-title>
+
+
+		<mat-card-content>
+
+
+
+
+			<div class="question">{{ hero }}</div>
+			<mat-slide-toggle (change)="onChange($event)">
+			</mat-slide-toggle>
+			<mat-divider></mat-divider>
+
+
+
+
+		</mat-card-content>
+	</mat-card>
+
+</div>
